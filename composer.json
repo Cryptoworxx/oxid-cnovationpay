@@ -8,7 +8,7 @@
     }
   },
   "require": {
-    "cryptoworxx/cnovation-pay": "*"
+    "cryptoworxx/cnovation-pay": ">=0.0.2"
   },
   "extra": {
     "oxideshop": {
