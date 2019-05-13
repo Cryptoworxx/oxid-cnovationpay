@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/5.3/engine/Shopware/Components/Plugin/schema/config.xsd">
+    <description>Test desc</description>
+    <elements>
+        <element type="text" scope="locale">
+            <name>cnovationpay_token</name>
+            <label lang="de">C-Novation Pay API Token</label>
+            <label lang="en">C-Novation Pay API Token</label>
+            <description lang="de">Dieses Token wird zur Verbindung mit dem C-Novation Pay Dienst benötigt</description>
+            <description lang="en">This token is needed to connect to the C-Novation Pay service</description>
+        </element>
+        <element type="button" scope="locale">
+            <name>cnovationpay_start_auth</name>
+            <label lang="de">Jetzt Zugang erhalten</label>
+            <label lang="en">Get a access now</label>
+            <options>
+                <handler>
+                    function(){ 
+                    window.open(
+                        'https://www.c-novation-pay.com/api/authenticate?requesting_system='+location.hostname,
+                        'cnovationpay_authentication');
+                    }
+                </handler>
+            </options>
+        </element>
+    </elements>
+</config>

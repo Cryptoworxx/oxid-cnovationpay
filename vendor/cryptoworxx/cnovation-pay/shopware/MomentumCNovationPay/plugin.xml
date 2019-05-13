@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../engine/Shopware/Components/Plugin/schema/plugin.xsd">
+ 
+    <version>0.0.1</version>
+    <link>https://www.c-novation-pay.com/</link>
+    <author>Momentum GmbH</author>
+    <compatibility minVersion="5.5.0" />
+    
+    <label lang="de">C-Novation Pay - Kryptopayment</label>
+    <label lang="en">C-Novation Pay - Cryptopayment</label>
+ 
+    <description lang="de">Akzeptieren Sie Kryptowährungen, wie Bitcoin und Ethereum als zusätzliche Zahlungsmöglichkeit.</description>
+    <description lang="en">Accept payment methods in cryptocurrency like bitcoin or ethereum.</description>
+ 
+</plugin>

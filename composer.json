@@ -1,0 +1,17 @@
+{
+  "name": "momentum/cnovationpay",
+  "type": "oxideshop-module",
+  "autoload": {
+    "psr-4": {
+      "Momentum\\CNovationPay\\": "../../../source/modules/momentum/cnovationpay"
+    }
+  },
+  "require": {
+    "cryptoworxx/cnovation-pay": "*"
+  },
+  "extra": {
+    "oxideshop": {
+      "target-directory": "momentum/cnovationpay"
+    }
+  }
+}
