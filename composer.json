@@ -1,5 +1,5 @@
 {
-  "name": "momentum/cnovationpay",
+  "name": "ollikley/cnovationpay",
   "type": "oxideshop-module",
   "autoload": {
     "psr-4": {
