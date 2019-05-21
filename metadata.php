@@ -10,8 +10,8 @@ use Momentum\CNovationPay\Model\CNovationPayOrder;
 use OxidEsales\Eshop\Application\Controller\OrderController;
 use OxidEsales\Eshop\Application\Controller\PaymentController;
 use OxidEsales\Eshop\Core\ViewConfig;
-use OxidEsales\Eshop\Application\Model\Order;
 use OxidEsales\Eshop\Application\Controller\ThankYouController;
+use OxidEsales\Eshop\Application\Model\Order;
 
 $sMetadataVersion = '2.0';
 
@@ -26,17 +26,17 @@ $aModule = array(
 		'en'	=> 'Accept payment methods in cryptocurrency like bitcoin or ethereum.'
 
 	],
-    'thumbnail'   => 'out/pictures/picture.png',
-    'version'     => '0.0.1-DEV',
-    'author'      => 'Scavix Software GmbH & Co. KG',
-    'url'         => 'https://www.scavix.com',
-    'email'       => 'info@scavix.com',
+    'thumbnail'   => 'plugin.png',
+    'version'     => '1.0.7',
+    'author'      => 'Momentum GmbH',
+    'url'         => 'https://www.c-novation-pay.com',
+    'email'       => 'info@c-novation-pay.com',
     'extend'      => [
 		ViewConfig::class           => \Momentum\CNovationPay\Core\ViewConfig::class,
 		PaymentController::class    => \Momentum\CNovationPay\Controller\PaymentController::class,
 		OrderController::class      => \Momentum\CNovationPay\Controller\OrderController::class,
         ThankYouController::class   => \Momentum\CNovationPay\Controller\ThankYouController::class,
-        \OxidEsales\Eshop\Application\Model\Order::class               => CNovationPayOrder::class,
+        Order::class                => CNovationPayOrder::class,
     ],
 	'events'      => [
 		'onActivate'   => '\Momentum\CNovationPay\Core\Events::onActivate',
@@ -49,7 +49,7 @@ $aModule = array(
 
 	],
     'templates'   => [
-		'mmcnovationpay_checkout.tpl'        => 'momentum/cnovationpay/views/tpl/checkout/mmcnovationpay_checkout.tpl',
+		'mmcnovationpay_checkout.tpl'       => 'momentum/cnovationpay/views/tpl/checkout/mmcnovationpay_checkout.tpl',
 		'mmcnovationpay_payment.tpl'        => 'momentum/cnovationpay/views/tpl/checkout/mmcnovationpay_payment.tpl',
 	],
     'blocks'      => [
@@ -60,7 +60,17 @@ $aModule = array(
         ]
 	],
     'settings'    => [
-		array('group' => 'cnovation_api', 'name' => 'sCPApiEndpoint',      'type' => 'str',   'value' => 'https://www.c-novation-pay.com/api'),
-		array('group' => 'cnovation_api', 'name' => 'sCPApiToken',      'type' => 'str',   'value' => ''),
-	]
+		[
+		    'group' => 'cnovation_api',
+            'name'  => 'sCPApiEndpoint',
+            'type'  => 'str',
+            'value' => 'https://www.c-novation-pay.com/api'
+        ],
+		[
+		    'group' => 'cnovation_api',
+            'name'  => 'sCPApiToken',
+            'type'  => 'str',
+            'value' => ''
+        ],
+    ]
 );
