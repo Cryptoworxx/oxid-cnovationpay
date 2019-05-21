@@ -14,6 +14,7 @@ class CNovationPayUtils
 	{
 		$config = Registry::getConfig();
 		$shopId = $config->getShopId();
-		return $config->getShopConfVar($name, $shopId, 'module:momentumc-novation-pay');
+		return $config->getShopConfVar($name, $shopId, 'module:momentumc-novationpay');
 	}
+
 }

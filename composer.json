@@ -1,7 +1,7 @@
 {
   "name": "ollikley/cnovationpay",
   "type": "oxideshop-module",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "autoload": {
     "psr-4": {
       "Momentum\\CNovationPay\\": "../../../source/modules/momentum/cnovationpay"

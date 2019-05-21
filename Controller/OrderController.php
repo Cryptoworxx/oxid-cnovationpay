@@ -32,10 +32,14 @@ class OrderController extends OrderController_parent
 	{
 
 		if($this->isCNovationPay()){
+            $request = Registry::getRequest();
+            $execute = $request->getRequestEscapedParameter('execute');
+		    if($execute == '1'){
+		        return parent::execute();
+            }
 			return 'CNovationCheckout';
 		}else{
-			$result = parent::execute();
-			return $result;
+            return parent::execute();
 		}
 	}
 
