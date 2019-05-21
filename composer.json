@@ -1,7 +1,7 @@
 {
-  "name": "ollikley/cnovationpay",
+  "name": "cryptoworxx/oxid-cnovationpay",
   "type": "oxideshop-module",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "authors": [
     {
       "name": "Momentum GmbH",

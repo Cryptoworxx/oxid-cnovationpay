@@ -1,9 +1,5 @@
 <?php
 
-/**
- * Metadata version
- */
-
 use Momentum\CNovationPay\Controller\CNovationCheckoutController;
 use Momentum\CNovationPay\Controller\StandartDispatcher;
 use Momentum\CNovationPay\Model\CNovationPayOrder;
@@ -27,7 +23,7 @@ $aModule = array(
 
 	],
     'thumbnail'   => 'plugin.png',
-    'version'     => '1.0.7',
+    'version'     => '1.0.8',
     'author'      => 'Momentum GmbH',
     'url'         => 'https://www.c-novation-pay.com',
     'email'       => 'info@c-novation-pay.com',

@@ -14,6 +14,6 @@ Disable the module in administration area and delete module folder.
 
 ## Credits
 
-    * Author: Scavix Software GmbH & Co. KG
-    * URL: https://www.scavix.com
-    * Mail: 
+    * Author: Momentum GmbH
+    * URL: https://www.c-novation-pay.com
+    * Mail: info@c-novation-pay.com
