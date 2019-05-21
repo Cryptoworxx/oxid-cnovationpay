@@ -2,7 +2,7 @@
 
 ## Requirements
 
-    * OXID eShop 5.2.x/4.9.x
+    * OXID eShop 6.1.x
 
 ## Installation
 
